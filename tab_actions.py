@@ -46,6 +46,3 @@ def transform_to_messages(input_strings):
 
     return output_strings
 
-
-def post_history(history, parsed_response):
-    history[-1][1] = parsed_response.line

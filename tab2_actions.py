@@ -1,12 +1,6 @@
-# 定义第一个标签页的输入和输出
 
 from logic.llm_driver import build_chat
 
-
-
-# def start_action(role_def_a, role_def_b, temperature, max_rounds, history):
-#
-#     return chat_bot_handler(role_def_a, temperature, history)
 
 def chat_bot_handler(role_def, temperature, history):
     # 定义一个空字符串，用来拼接每一轮对话
@@ -44,6 +38,3 @@ def transform_to_messages(input_strings):
 
     return output_strings
 
-
-def post_history(history, parsed_response):
-    history[-1][1] = parsed_response.line
